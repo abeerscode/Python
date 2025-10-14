@@ -1,0 +1,42 @@
+# Ignore everything
+*
+
+# But not these:
+!readme.md
+!.gitignore
+!*.py
+!*/               # Keep all directories
+
+# Ignore Python build outputs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.tmp
+
+# Ignore virtual environments
+env/
+venv/
+ENV/
+.venv/
+.ENV/
+
+# Ignore build/distribution folders
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE/Editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
