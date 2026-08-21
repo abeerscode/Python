@@ -1,13 +1,21 @@
-# Ignore everything
+# Ignore everything by default
 *
 
-# But not these:
+# Allow directories
+!*/
+
+# Allow Python files
+!*.py
+
+# Allow Jupyter notebooks
+!*.ipynb
+
+# Allow README and Git configuration
 !readme.md
 !.gitignore
-!*.py
-!*/               # Keep all directories
 
-# Ignore Python build outputs
+
+# Python cache/build files
 __pycache__/
 *.pyc
 *.pyo
@@ -16,27 +24,32 @@ __pycache__/
 *.log
 *.tmp
 
-# Ignore virtual environments
+
+# Virtual environments
 env/
 venv/
 ENV/
 .venv/
 .ENV/
 
-# Ignore build/distribution folders
+
+# Build/distribution folders
 build/
 dist/
 *.egg-info/
 *.egg
 
-# Ignore Jupyter Notebook checkpoints
+
+# Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Ignore IDE/Editor settings
+
+# IDE/editor settings
 .vscode/
 .idea/
 *.code-workspace
 
-# Ignore OS-specific files
+
+# OS-specific files
 .DS_Store
 Thumbs.db
